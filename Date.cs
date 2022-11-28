@@ -271,7 +271,6 @@ namespace CalendarApp
                     {
                         year++;
                         month = 1;
-                        day = 1;
                     }
                 }
             }
@@ -290,7 +289,7 @@ namespace CalendarApp
         public static int DayNumToDay(int dayNum)
         {
             int[] date = DayNumToArray(dayNum);
-            return date[1];
+            return date[0];
         }
 
         //Convert a day number to its month
